@@ -71,9 +71,13 @@
         .hero {
             background: url(hero.png) center/cover;
             color: white;
-            padding: 150px 0 100px;
+            padding: 150px 0 50px;
             text-align: center;
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
         }
 
         .hero h1 {
@@ -91,9 +95,16 @@
 
         .hero p {
             font-size: 1.5rem;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
             opacity: 0.9;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero .cta-button {
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .cta-button {
@@ -399,7 +410,11 @@
             }
 
             .hero .cta-button {
-                margin-top: 4rem;
+                position: absolute;
+                bottom: 40px;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: 0;
             }
 
             .section-title {
